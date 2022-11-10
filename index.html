@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">Tabulka - Čechy</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,9 +27,9 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [50, 14], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-    scrollWheelZoom: false
+    center: [50, 15.5], // EDIT coordinates to re-center map
+    zoom: 8,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: true
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
@@ -41,7 +41,7 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([48.9787164, 14.0118300]).addTo(map).bindPopup("Libín - 6.11.2022"); // EDIT pop-up text message
+  L.marker([48.9787164, 14.0118300]).addTo(map).bindPopup("Libín - 6.11.2022").; // EDIT pop-up text message
 
   </script>
 </body>
